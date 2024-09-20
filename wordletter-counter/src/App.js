@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
-import WordLetterCount from './wordLetterCount.js';
-import './App.css';
+import WordLetterCount from './WordLetterCounter.js';
 
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
             Words and Letters 
             Counter 
             </h1> 
-            <wordLetterCounter /> 
+            <WordLetterCount/> 
     </div>
   );
 }
