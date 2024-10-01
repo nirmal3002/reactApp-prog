@@ -1,4 +1,4 @@
-import PersonList from './components/PersonList.js';
+import PersonList from './component/PersonList.js';
 
 function App() {
   return (
@@ -8,4 +8,5 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
+export  default PersonList;
