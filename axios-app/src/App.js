@@ -1,4 +1,4 @@
-import PersonList from './component/PersonList.js';
+import PersonList from './components/PersonList.js';
 
 function App() {
   return (
