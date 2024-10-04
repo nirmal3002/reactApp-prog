@@ -1,7 +1,6 @@
 import React from 'react'
 
 const NotFound = () => {
-  const API_URL=process.env.REACT_APP_API_URL
 
   return (
     <div >
