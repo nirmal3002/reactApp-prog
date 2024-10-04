@@ -8,6 +8,7 @@ import PersonAdd from './components/PersonAdd';
 import PersonEdit from './components/PersonEdit';
 import Notification from './components/Notification';
 //  import Notfound from './components/NotFound';
+import DeletePerson from './components/DeletePerson';
 
 import './App.css'; // Global styles
 import NotFound from './components/NotFound';
@@ -21,9 +22,11 @@ const App = () => {
                     <Route path="/" element={<PersonList />} />
                     <Route path="/add" element={<PersonAdd />} />
                     <Route path="/edit" element={<PersonEdit />} />
-                    <Route path="/person" element={<PersonDetail />} />
+                    <Route path="/detail" element={<PersonDetail />} />
                     <Route path="/notification" element={<Notification/>} />
                     <Route path="/notfound" element={<NotFound />} />
+                    <Route path="/delete" element={<DeletePerson />} />
+
                    </Routes>
                      </div>
         </Router>

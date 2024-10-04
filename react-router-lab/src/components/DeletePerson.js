@@ -1,12 +1,13 @@
 import React from 'react';
+// import axios from 'axios';
 
-const handleDelete = () => {
- 
+const DeletePerson = () => {
+    // const API_URL = process.env.REACT_APP_API_URL
+    return(
+        <div>
+            <h2> This page is use for delete </h2>
+        </div>
+    )
+}
 
-return (
- <h1> this is the output</h1 >
-
-  );
-};
-
-  export default DeletePerson;
+export default DeletePerson;
