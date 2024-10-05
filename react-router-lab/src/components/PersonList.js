@@ -6,7 +6,7 @@ import Notification from './Notification';
 import '../styles/PersonList.css'
 
 const API_URL=process.env.REACT_APP_API_URL
-const output = axios.get("https://5000-nirmal3002-reactappprog-ssm6vikaslb.ws-us116.gitpod.io/persons");
+// const output = axios.get("https://5000-nirmal3002-reactappprog-ssm6vikaslb.ws-us116.gitpod.io/persons");
 
 
 
