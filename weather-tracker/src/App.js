@@ -1,21 +1,19 @@
-//App.js
-
-import { Oval } from 'react-loader-spinner';
-import React, { useState } from 'react';
+import { Oval } from 'react-loader-spinner';//Displays a spinner while the API call is being made
+import React, { useState } from 'react';//import the hooks function "usestate"
 import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import a library for adding icons
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function GfGWeatherApp() {
-	const [input, setInput] = useState('');
+	const [input, setInput] = useState(''); //define the variable of const type
 	const [weather, setWeather] = useState({
-		loading: false,
-		data: {},
+		loading: false, //indicate the app is loadng data from api
+		data: {},//holds the weather data retrieved from the API
 		error: false,
 	});
 
-	const toDateFunction = () => {
+	const toDateFunction = () => { //utility function to format the months
 		const months = [
 			'January',
 			'February',
@@ -30,7 +28,7 @@ function GfGWeatherApp() {
 			'November',
 			'December',
 		];
-		const WeekDays = [
+		const WeekDays = [ //utility function to format the months
 			'Sunday',
 			'Monday',
 			'Tuesday',
@@ -45,12 +43,12 @@ function GfGWeatherApp() {
 		return date;
 	};
 
-	const search = async (event) => {
-		if (event.key === 'Enter') {
+	const search = async (event) => {//it uses to search when thw user used to input an event 
+		if (event.key === 'Enter') {//event key  triggered when we prase the enter key
 			event.preventDefault();
 			setInput('');
 			setWeather({ ...weather, loading: true });
-			const url = 'https://api.openweathermap.org/data/2.5/weather';
+			const url = 'https://api.openweathermap.org/data/2.5/weather';//define the map 
 			const api_key = 'f00c38e0279b7bc85480c3fe775d518c';
 			await axios
 				.get(url, {
@@ -60,7 +58,7 @@ function GfGWeatherApp() {
 						appid: api_key,
 					},
 				})
-				.then((res) => {
+				.then((res) => {// if the weather of the place is found then the res function will work 
 					console.log('res', res);
 					setWeather({ data: res.data, loading: false, error: false });
 				})
@@ -75,8 +73,8 @@ function GfGWeatherApp() {
 	return (
 		<div className="App">
 			<h1 className="app-name"> Weather App</h1>
-			<div className="search-bar">
-				<input
+			<div className="search-bar">  
+				<input        //display where we used to enter the city name
 					type="text"
 					className="city-search"
 					placeholder="Enter City Name.."
@@ -86,7 +84,7 @@ function GfGWeatherApp() {
 					onKeyPress={search}
 				/>
 			</div>
-			{weather.loading && (
+			{weather.loading && ( //it display when the data process throug API
 				<>
 					<br />
 					<br />
@@ -113,7 +111,7 @@ function GfGWeatherApp() {
 					<div className="date">
 						<span>{toDateFunction()}</span>
 					</div>
-					<div className="icon-temp">
+					<div className="icon-temp"> 
 						<img
 							className=""
 							src={`https://openweathermap.org/img/wn/${weather.data.weather[0].icon}@2x.png`}
