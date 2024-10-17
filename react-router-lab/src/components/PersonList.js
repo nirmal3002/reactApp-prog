@@ -44,7 +44,7 @@ useEffect(() => {
           {people.map(person => (
             <tr key={person.id}>
               <td>
-                <Link to={`/person/${person.id}`} className="person-name">
+                <Link to={`/detail/${person.id}`} className="person-name">
                   {person.name}
                 </Link>
               </td>
