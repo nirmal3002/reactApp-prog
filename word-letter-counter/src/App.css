@@ -1,0 +1,19 @@
+
+.App { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #fcf89c; 
+  height: 100vh; 
+} 
+
+#top { 
+  font-size: 27px; 
+  margin: 20px 0; 
+  color: #e61814; 
+} 
+h1 { 
+  font-size: 27px; 
+  margin: 20px 0; 
+  color: #9abeca; 
+} 
