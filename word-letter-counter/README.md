@@ -17,7 +17,7 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
    git clone https://github.com/yourusername/word-letter-counter.git
 2. Navigate to the project directory:
    ``` bash
-   cd word-letter-counter
+   cd Word-letter-counter
 3. Install the dependencies:
    ``` bash
    bash
