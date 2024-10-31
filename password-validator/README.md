@@ -39,6 +39,8 @@ Open your browser and navigate to http://localhost:3000 to see the app in action
 
 
 ### Output of the Password-validator
+![Capture-Password-cheaker](https://github.com/user-attachments/assets/ef844f64-bb3b-4606-8131-36afe5f87f9d)
+
 ## Usage
 * Enter a password in the input field.
 * The app will indicate whether the password is strong or not based on the specified criteria.
