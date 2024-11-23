@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './PersonList.css'
 
-const API_URL = 'https://3001-nirmal3002-reactappprog-bj8f9yyuikh.ws-us116.gitpod.io/persons';
+const API_URL = 'https://3001-nirmal3002-reactappprog-dzqmej5st86.ws-us116.gitpod.io/persons';
 
 const PersonList = () => {
     const [persons, setPersons] = useState([]);
