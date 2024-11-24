@@ -49,7 +49,7 @@ PUT    /persons/:id    - Update an existing person
 DELETE /persons/:id    - Delete a person
 ```
 ## Output of the axios-app project:
-
+![Capture-Password-cheaker]()
 ## Usage
 * To add a person, fill in the name and age fields in the form and click "Add Person."
 * To edit a person, click the "Edit" button next to the person, make your changes, and click "Update."
