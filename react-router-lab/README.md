@@ -25,6 +25,7 @@
 ```
 * Your app should now be running on http://localhost:3000.
 ## Output of the react-router-app
+![Capture](https://github.com/user-attachments/assets/b05efe5e-7e20-4978-93aa-6100c5cc3d64)
 
 ## Usage
 * Navigate between different routes using the navigation links provided in the app.
