@@ -1,6 +1,7 @@
 # Lyrics Finder
 ## Output of this project
-[The output video of lyrics-finder]()
+[The output video of lyrics-finder](Uploading package.json - reactApp-prog - Gitpod Code - Google Chrome 2024-12-03 21-50-20.mp4…
+)
 * A simple React application that allows users to search for song lyrics by entering the artist's name and the song title.
 ## Features
 * Search for lyrics by artist and song title.
