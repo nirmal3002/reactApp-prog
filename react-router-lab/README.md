@@ -12,8 +12,10 @@
 ### Installation
 1. Clone the repository:
  ```
+
  git clone <repository-url>
  cd react_router_app
+
 ```
 2. Install the dependencies:
 ```
